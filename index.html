@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brandon's Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f3f4f6;
+      color: #111827;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    header h1 {
+      margin-bottom: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: #1f2937;
+    }
+
+    .card p {
+      flex: 1;
+      color: #4b5563;
+      margin: 0.5rem 0 1.5rem;
+    }
+
+    .btn {
+      background-color: #3b82f6;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 8px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 0.95rem;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Brandon’s Dashboard</h1>
+    <p>Just a simple dashboard</p>
+  </header>
+
+<div class="grid">
+
+  <!-- SVG Tools Card -->
+  <div class="card">
+    <img src="https://plus.unsplash.com/premium_photo-1719862007265-34e67f3943b3?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="SVG Tools Splash">
+    <div class="card-content">
+      <h2>SVG Multi-Search Highlighter</h2>
+      <p>Search in SVG file.</p>
+      <a href="https://svg.brandontoh.com" class="btn">Open</a>
+    </div>
+  </div>
+
+  <!-- n8n Card -->
+  <div class="card">
+    <img src="https://images.unsplash.com/photo-1750630098132-b7567d2128b4?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="n8n Splash">
+    <div class="card-content">
+      <h2>n8n Automation</h2>
+      <p>n8n.</p>
+      <a href="https://n8n.brandontoh.com" class="btn">Open</a>
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
